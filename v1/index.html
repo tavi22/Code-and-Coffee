@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code & Coffe Movement</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="media_queries.css">
+    <script src="cos_java.js" async></script>
+
+
+</head>
+<body>
+
+<div class="container">
+    <div class="nav-wrapper">
+
+        <div class="left-side">
+            <div class="top-logo-wrapper">
+                <a href="index.html">
+                    <img src="images/logos/coflogo.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="nav-link-wrapper active-nav-link">
+                <a href="index.html">Acasa</a>
+            </div>
+
+            <div class="nav-link-wrapper">
+                <a href="about.html">Despre noi</a>
+            </div>
+
+            <div class="nav-link-wrapper">
+                <div class="dropdown-menu" style="float:left;">
+                    <a href="meniu.html">Meniu</a>
+                    <div class="dropdown-content" style="left:0;">
+                        <a href="cafea.html">Cafea</a>
+                        <a href="ceai.html">Ceai</a>
+                        <a href="desert.html">Deserturi</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-link-wrapper">
+                <a href="oportunitati.html">Oportunitati</a>
+            </div>
+
+            <div class="nav-link-wrapper">
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="nav-link-wrapper"  style="margin-left: 200px">
+                <a href="cos.html">Cosul Meu
+                    <span class="cartNr">(0)</span>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="content-wrapper-3grid">
+    <div class="images-wrapper">
+
+        <div class="item-wrapper">
+            <div class="item-img-background" style="background-image:url(images/lapte.jpg)"></div>
+
+            <div class="img-text-wrapper">
+                <div class="title">Care este laptele tau preferat?</div>
+                <div class="subtitle">Ovaz</div>
+                <div class="subtitle">Migdale</div>
+                <div class="subtitle">Soia</div>
+                <div class="subtitle">Cocos</div>
+
+            </div>
+        </div>
+
+        <div class="item-wrapper">
+            <div class="item-img-background" style="background-image:url(images/cafea_boabe.jpg)"></div>
+            <div class="img-text-wrapper">
+                <div class="title">Cafea proaspata zi de zi.</div>
+                <div class="subtitle">Arabica</div>
+                <div class="subtitle">Robusta</div>
+                <div class="subtitle">+ multe arome</div>
+
+            </div>
+        </div>
+
+        <div class="item-wrapper">
+            <div class="item-img-background" style="background-image:url(images/mac_coffeetable.jpg)"></div>
+            <div class="img-text-wrapper">
+                <div class="title">Socializare sau relaxare?</div>
+                <div class="subtitle">Locul perfect pentru o intalnire cu un client sau pur si simplu pentru relaxare</div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="content-wide-image-wrapper">
+        <div class="big-wrapper">
+            <div class="wide-img-wrapper">
+                <div class="wide-img-background" style="background-image:url(images/cafeluta_cafea_bob.jpg)"></div>
+                <div class="wide-img-about-btn">
+                    <a href="about.html">
+                        <button class="about-btn">Afla mai multe!</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<footer>
+    <ul>
+        <li><a href="index.html">Acasa</a></li>
+        <li><a href="about.html">Despre noi</a></li>
+        <li><a href="oportunitati.html">Alatura-te echipei</a></li>
+        <li> <p>Copyright Code & Coffee MVMT © 2021</p></li>
+    </ul>
+</footer>
+
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.item-wrapper');
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.add('image-blur');
+        });
+
+        portfolioItem.addEventListener('mouseout', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.remove('image-blur');
+        });
+    });
+
+</script>
+
+
+
+</html>

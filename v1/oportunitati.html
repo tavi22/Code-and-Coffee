@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code & Coffe Movement</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media_queries.css">
+    <script src="cos_java.js" async></script>
+    <script src="formular.js"></script>
+    <script src="server.js"></script>
+
+
+</head>
+<body>
+
+<div class="container">
+    <div class="nav-wrapper">
+
+        <div class="left-side">
+            <div class="top-logo-wrapper">
+                <a href="index.html">
+                    <img src="images/logos/coflogo.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="nav-link-wrapper">
+                <a href="index.html">Acasa</a>
+            </div>
+
+            <div class="nav-link-wrapper">
+                <a href="about.html">Despre noi</a>
+            </div>
+
+            <div class="nav-link-wrapper">
+                <div class="dropdown-menu" style="float:left;">
+                    <a href="meniu.html">Meniu</a>
+                    <div class="dropdown-content" style="left:0;">
+                        <a href="cafea.html">Cafea</a>
+                        <a href="ceai.html">Ceai</a>
+                        <a href="desert.html">Deserturi</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-link-wrapper active-nav-link">
+                <a href="oportunitati.html">Oportunitati</a>
+            </div>
+
+            <div class="nav-link-wrapper">
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="nav-link-wrapper"  style="margin-left: 200px">
+                <a href="cos.html">Cosul Meu
+                    <span class="cartNr">(0)</span>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="job-wrapper">
+
+    <div class="job-presentation">
+
+        <div class="job-intro">
+            <h2>Dacă te simţi pregătit să porneşti într-o nouă aventură, în care să explorezi traseul către culmile succesului, ale unui brand proaspăt lansat, de abia aşteptăm să te cunoaştem!
+
+                Şi pentru că nimic nu poate fi realizat fără o echipă solidă, implicată 100%, căutăm in permanenţă membrii la bordul navei în care ne-am îmbarcat.
+
+                Ştim că tu eşti cel pe care îl căutăm!</h2>
+
+        </div>
+
+        <div class="job-list">
+            <h1> Posturi disponibile:</h1>
+            <ul>
+                <li><h2>Store Manager</h2></li>
+                <li><h2>Assistant Manager</h2></li>
+                <li><h2>Barista</h2></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div class="job-form-wrapper">
+        <div class="img-form">
+            <img src="images/apron.jpg" alt="">
+        </div>
+        <div class="job-input">
+            <form id="formular-contact" action="http://localhost:8080/cale" method="GET" onsubmit="return formular()" >
+                <label for="nume">
+                    Nume*
+                </label><br>
+                <input type="text" value="" data-msg-required="Inserati numele." maxlength="100" class="form-control" name="nume" id="nume"><br><br>
+
+                <label for="prenume">
+                    Prenume*
+                </label><br>
+                <input type="text" value="" data-msg-required="Inserati prenumele." maxlength="100" class="form-control" name="prenume" id="prenume"><br><br>
+
+                <label for="email">
+                    Adresa de email*
+                </label><br>
+                <input type="email" value="" data-msg-required="Inserati adresa de email." data-msg-email="Inserati o adresa valida de email." maxlength="100" class="form-control" name="email" id="email"><br><br>
+
+                <label>
+                    Adauga CV*
+                </label><br><br>
+                <input type="file" name="atasament" id="atasament"><br><br>
+
+                <div class="job-sendBtn">
+                    <input type="submit" value="Trimite CV" class="btn-send-cv" data-loading-text="Loading..."><br><br>
+                </div>
+
+            </form>
+
+        </div>
+
+
+
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <ul>
+        <li><a href="index.html">Acasa</a></li>
+        <li><a href="about.html">Despre noi</a></li>
+        <li><a href="oportunitati.html">Alatura-te echipei</a></li>
+        <li> <p>Copyright Code & Coffee MVMT © 2021</p></li>
+    </ul>
+</footer>
+
+</body>
+</html>
