@@ -1,5 +1,5 @@
 # Code-and-Coffee
-Simple HTTP and CSS web application.  
-Restriction: no template apps (just plain http/css)  
+Simple HTTP/CSS and JavaScript web application.  
+Restriction: no template apps    
 TW Project  
 University of Bucharest  
